@@ -1,41 +1,80 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Login Page</title>
-      <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-   <body>
-      <div class="wrapper">
-         <div class="title">
-            Login Form
-         </div>
-         <form action="#">
-            <div class="field">
-               <input type="text" required>
-               <label>Alamat Email</label>
-            </div>
-            <div class="field">
-               <input type="password" required>
-               <label>Kata Sandi</label>
-            </div>
-            <div class="content">
-               <div class="checkbox">
-                  <input type="checkbox" id="remember-me">
-                  <label for="remember-me">Ingat Saya</label>
-               </div>
-               <div class="pass-link">
-                  <a href="#">Lupa Kata Sandi?</a>
-               </div>
-            </div>
-            <div class="field">
-               <input type="submit" value="Login">
-            </div>
-            <div class="signup-link">
-               Bukan Anggota? <a href="#">Daftar Sekarang</a>
-            </div>
-         </form>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="images/frontImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Every new friend is a <br> new adventure</span>
+          <span class="text-2">Let's get connected</span>
+        </div>
       </div>
-   </body>
+      <div class="back">
+        <img class="backImg" src="images/backImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Masuk</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="#">Lupa Kata Sandi?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit">
+              </div>
+              <div class="text sign-up-text">Belum punya akun? <label for="flip">Daftar Sekarang</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Daftar</div>
+        <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Masukkan Nama Anda" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Masukkan Email Anda" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Masukkan Kata Sandi" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit">
+              </div>
+              <div class="text sign-up-text">Sudah Punya Akun? <label for="flip">Masuk Sekarang</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
 </html>
